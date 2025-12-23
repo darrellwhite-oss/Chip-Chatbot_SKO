@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat with Chip C</title>
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; }
-    </style>
-</head>
-<body>
-    <flowise-fullchatbot></flowise-fullchatbot>
-    <script type="module">
-        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-        Chatbot.initFull({
-            chatflowid: "YOUR-CHATFLOW-ID", 
-            apiHost: "YOUR-FLOWISE-URL",
-            theme: {
-                chatWindow: {
-                    welcomeMessage: "What do you want? I'm busy.",
-                    showAgentMessages: false,
-                    title: "Chip C - President",
-                    backgroundColor: "#ffffff",
-                }
-            }
-        })
-    </script>
-</body>
-</html>
+<flowise-fullchatbot></flowise-fullchatbot>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.initFull({
+        chatflowid: "51364cb9-f796-4f49-babf-99c2873ed45e",
+        apiHost: "https://cloud.flowiseai.com",
+    })
+</script>
