@@ -1,8 +1,60 @@
-<flowise-fullchatbot></flowise-fullchatbot>
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.initFull({
-        chatflowid: "51364cb9-f796-4f49-babf-99c2873ed45e",
-        apiHost: "https://cloud.flowiseai.com",
-    })
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chip C - President</title>
+    <style>
+        /* This makes the chatbot fill the entire browser window */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <flowise-fullchatbot></flowise-fullchatbot>
+
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.initFull({
+            chatflowid: "51364cb9-f796-4f49-babf-99c2873ed45e",
+            apiHost: "https://cloud.flowiseai.com",
+            theme: {
+                chatWindow: {
+                    showTitle: true,
+                    title: "Chip C - Internal Ops",
+                    titleBackgroundColor: "#2c3e50",
+                    titleTextColor: "#ffffff",
+                    welcomeMessage: "What do you want? I'm busy. Make it quick.",
+                    backgroundColor: "#ffffff",
+                    fontSize: 16,
+                    showAgentMessages: false, // Hides the technical 'brain' steps from users
+                    botMessage: {
+                        backgroundColor: "#f1f0f0",
+                        textColor: "#303235",
+                        showAvatar: true,
+                        avatarSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
+                    },
+                    userMessage: {
+                        backgroundColor: "#3B81F6",
+                        textColor: "#ffffff",
+                        showAvatar: false,
+                    },
+                    textInput: {
+                        placeholder: "Ask about the '83 project...",
+                        backgroundColor: "#ffffff",
+                        textColor: "#303235",
+                        sendButtonColor: "#3B81F6",
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
